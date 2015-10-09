@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Nivaldo Fernandes" />
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+
+    <link rel="stylesheet" href="/styles/main.css" />
+
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/d3/d3.js"></script>
+    <!-- endbower -->
+
+    <!-- browserified js file -->
+    <script src="/scripts/main.js"></script>
+
+    <script src="/lib/myLib.js"></script>
+  </head>
+  <body ng-controller="mainController">
+    <div class="container">
+      <h1>{{hello}}</h1>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <hr/>
+
+      <!-- note the absence of the script tag for this; this is being loaded
+      inside app.js via a require statement -->
+      <pagination
+          total-items="20"
+          ng-model="currentPage"
+          max-size="maxSize"
+          class="pagination-sm"
+          boundary-links="true"
+          rotate="false"
+          items-per-page="5">
+      </pagination>
+    </div>
+  </body>
+</html>

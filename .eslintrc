@@ -1,0 +1,30 @@
+/*
+0 - turn the rule off
+1 - turn the rule on as a warning (doesn't affect exit code)
+2 - turn the rule on as an error (exit code is 1 when triggered)
+*/
+
+{
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "no-eval": 1,
+    "dot-notation": 1,
+    "no-lone-blocks": 1,
+    "no-loop-func": 1,
+    "no-redeclare": 1,
+    "quotes": [2, "single", "avoid-escape"],
+    "indent": [2, 2], // 2-space indentation
+    "camelcase": [2, {"properties": "always"}],
+    "eqeqeq": [2, "smart"],
+    "curly": [2, "all"],
+    "no-multi-spaces": 2,
+    "space-after-keywords": 2,
+    "array-bracket-spacing": 2,
+    "spaced-comment": 1,
+    "no-undef": 0,
+    "no-unused-vars": 0,
+    "no-shadow": 0 // if required, message: variable is already declared in the upper scope
+  }
+}
