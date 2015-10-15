@@ -28,3 +28,6 @@ var portNumber = argv.port || 5000;
 app.listen(portNumber);
 
 log.info('express server listening on port',portNumber);
+
+var test = require('./my_modules/app.js');
+test();

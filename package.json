@@ -7,11 +7,15 @@
     "gulp": "^3.6.0",
     "gulp-eslint": "^1.0.0",
     "gulp-load-plugins": "^0.10.0",
+    "gulp-nodemon": "^2.0.4",
     "vinyl-source-stream": "^1.1.0",
     "wiredep": "^2.2.2"
   },
   "main": "index.js",
   "dependencies": {
+    "angular": "^1.4.7",
+    "angular-ui-bootstrap": "^0.14.2",
+    "lodash": "^3.10.1",
     "log4js": "^0.6.27",
     "minimist": "^1.2.0"
   }
